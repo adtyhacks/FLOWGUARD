@@ -1,0 +1,53 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "1. Run ShopZone Server",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${workspaceFolder}/run_shopzone.py",
+            "console": "integratedTerminal",
+            "envFile": "${workspaceFolder}/.env",
+            "justMyCode": true
+        },
+        {
+            "name": "2. Run FlowGuard Dashboard (Streamlit)",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${workspaceFolder}/run_dashboard.py",
+            "console": "integratedTerminal",
+            "envFile": "${workspaceFolder}/.env",
+            "justMyCode": true
+        },
+        {
+            "name": "3. FlowGuard Assessment (Secure Mode)",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${workspaceFolder}/run_assessment.py",
+            "args": ["--mode", "secure"],
+            "console": "integratedTerminal",
+            "envFile": "${workspaceFolder}/.env",
+            "justMyCode": true
+        },
+        {
+            "name": "4. FlowGuard Assessment (Vulnerable Mode)",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${workspaceFolder}/run_assessment.py",
+            "args": ["--mode", "vulnerable"],
+            "console": "integratedTerminal",
+            "envFile": "${workspaceFolder}/.env",
+            "justMyCode": true
+        },
+        {
+            "name": "5. Run All Pytests",
+            "type": "debugpy",
+            "request": "launch",
+            "module": "pytest",
+            "args": ["tests", "-v"],
+            "console": "integratedTerminal",
+            "envFile": "${workspaceFolder}/.env",
+            "justMyCode": false
+        }
+    ]
+}

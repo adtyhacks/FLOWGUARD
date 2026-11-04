@@ -1,0 +1,55 @@
+# Python cache and build artifacts
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.pytest_cache/
+.coverage
+htmlcov/
+build/
+dist/
+*.egg-info/
+
+# Virtual environments
+venv/
+.venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+
+# Instance directory (local databases, WAL files, runtime assessment history)
+instance/
+*.sqlite
+*.sqlite3
+*.db
+
+# Environment, secrets, and credentials
+.env
+.env.*
+!.env.example
+
+# Temporary files and scratch
+*.tmp
+*.temp
+tmp/
+temp/
+scratch/
+
+# Sensitive logs and telemetry
+*.log
+logs/
+*.log.*
+
+# Generated reports & transient artifacts
+reports/*.pdf
+screenshots/test_*.png
+
+# IDE and OS
+.vscode/*
+!.vscode/launch.json
+!.vscode/tasks.json
+!.vscode/settings.json
+.idea/
+.DS_Store
+Thumbs.db

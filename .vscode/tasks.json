@@ -1,0 +1,45 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "ShopZone: Start Server",
+            "type": "shell",
+            "command": "python run_shopzone.py",
+            "problemMatcher": [],
+            "group": "none",
+            "isBackground": true
+        },
+        {
+            "label": "FlowGuard: Launch Dashboard",
+            "type": "shell",
+            "command": "python run_dashboard.py",
+            "problemMatcher": [],
+            "group": "none",
+            "isBackground": true
+        },
+        {
+            "label": "FlowGuard: Assess Secure Mode",
+            "type": "shell",
+            "command": "python run_assessment.py --mode secure",
+            "problemMatcher": [],
+            "group": "test"
+        },
+        {
+            "label": "FlowGuard: Assess Vulnerable Mode",
+            "type": "shell",
+            "command": "python run_assessment.py --mode vulnerable",
+            "problemMatcher": [],
+            "group": "test"
+        },
+        {
+            "label": "Test: Pytest Full Suite",
+            "type": "shell",
+            "command": "python -m pytest tests -q",
+            "problemMatcher": [],
+            "group": {
+                "kind": "test",
+                "isDefault": true
+            }
+        }
+    ]
+}
