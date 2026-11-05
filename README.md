@@ -287,7 +287,7 @@ For full mathematical proofs, see [docs/PNRI_METHODOLOGY.md](docs/PNRI_METHODOLO
 
 ### Step 1: Clone or Navigate to the Workspace
 ```powershell
-git clone https://github.com/<your-username>/FLOWGUARD.git
+git clone https://github.com/<adtyhacks>/FLOWGUARD.git
 cd FLOWGUARD
 ```
 
